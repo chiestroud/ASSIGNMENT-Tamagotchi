@@ -2,8 +2,23 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
+  background-color: lightblue;
   color: brown;
   text-align: center;
   margin-top: 100px;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 5px;
+}
+
+#progress {
+  grid-column: 1 / -1;
+}
+
+#pet {
+  grid-column: 1 / -1;
 }
