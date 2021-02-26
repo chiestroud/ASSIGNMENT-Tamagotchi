@@ -1,8 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "./eat.scss";
+@import "./fight.scss";
+@import "./play.scss";
+@import "./sleep.scss";
 
 body {
-  background-color: lightblue;
+  background-image: url('https://images.prod.hulu.jp/d3urerHm/uploads/migration/50019724_series_art__768x2048_tamagotchi_happy_harmony_85dde8470317305012e27d7d887f048c.jpg?w=1600&h=600&p=t');
   color: brown;
   text-align: center;
   margin-top: 100px;
@@ -11,8 +15,8 @@ body {
 #app {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 250px);
-  grid-gap: 5px;
+  grid-template-rows: 100px 300px 300px;
+  grid-gap: 10px;
 }
 
 #progress {
@@ -21,4 +25,6 @@ body {
 
 #pet {
   grid-column: 1 / -1;
+  background-color: orange;
+  margin: 0 auto;
 }
