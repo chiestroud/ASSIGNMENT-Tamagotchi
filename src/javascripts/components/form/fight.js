@@ -28,9 +28,4 @@ const strengthButton = (e) => {
   }
 };
 
-const strengthHandleEvent = () => {
-  document.querySelector('#runButton').addEventListener('click', strengthButton);
-  document.querySelector('#violenceButton').addEventListener('click', strengthButton);
-};
-
-export default strengthHandleEvent;
+export default strengthButton;

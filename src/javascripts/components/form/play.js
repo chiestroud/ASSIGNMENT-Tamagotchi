@@ -33,9 +33,9 @@ const funButtonFunc = (e) => {
   }
 };
 
-const buttonClick = () => {
-  document.querySelector('#funButton').addEventListener('click', funButtonFunc);
-  document.querySelector('#littleFunButton').addEventListener('click', funButtonFunc);
-};
+// const buttonClick = () => {
+//   document.querySelector('#funButton').addEventListener('click', funButtonFunc);
+//   document.querySelector('#littleFunButton').addEventListener('click', funButtonFunc);
+// };
 
-export default buttonClick;
+export default funButtonFunc;

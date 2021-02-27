@@ -33,9 +33,4 @@ const sleepButton = (e) => {
   }
 };
 
-const sleepHandleEvent = () => {
-  document.querySelector('#napButton').addEventListener('click', sleepButton);
-  document.querySelector('#slumberButton').addEventListener('click', sleepButton);
-};
-
-export default sleepHandleEvent;
+export default sleepButton;
