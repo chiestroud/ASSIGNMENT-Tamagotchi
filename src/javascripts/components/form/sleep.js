@@ -1,18 +1,8 @@
-const sleepBuilder = () => {
-  document.querySelector('#sleep').innerHTML = `<div class="sleep pt-2">
-                                                <div class="mb-2">Let's SLEEP</div>
-                                                 <img class="sleepImg" src="https://i.gzn.jp/img/2015/07/12/tamagotch-apple-watch/s86.png" alt="sleep">
-                                                <p id="energy" class="mt-2">50</p>
-                                                <div class="buttons pb-3">
-                                                  <button class="btn btn-success" id="napButton">Nap</button>
-                                                  <button class="btn btn-success" id="slumberButton">Deep Sleep</button>
-                                                </div>
-                                                </div>`;
-};
+let energy = 50;
 
 const getSleep = () => {
-  const initialSleep = document.querySelector('#energy').innerHTML;
-  return Number(initialSleep);
+  energy = document.querySelector('#energy').innerHTML;
+  return Number(energy);
 };
 
 const updateSleep = (newScore) => {
@@ -22,7 +12,7 @@ const updateSleep = (newScore) => {
 const sleepButton = (e) => {
   const buttonId = e.target.id;
   if (buttonId === 'napButton') {
-    let energy = getSleep();
+    energy = getSleep();
     if (energy + 50 < 100) {
       energy += 50;
       updateSleep(energy);
@@ -32,7 +22,7 @@ const sleepButton = (e) => {
     }
   }
   if (buttonId === 'slumberButton') {
-    let energy = getSleep();
+    energy = getSleep();
     if (energy + 60 < 100) {
       energy += 60;
       updateSleep(energy);
@@ -48,4 +38,4 @@ const sleepHandleEvent = () => {
   document.querySelector('#slumberButton').addEventListener('click', sleepButton);
 };
 
-export { sleepBuilder, sleepHandleEvent };
+export default sleepHandleEvent;
