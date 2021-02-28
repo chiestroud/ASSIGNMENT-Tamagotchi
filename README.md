@@ -1,8 +1,9 @@
 # Tamagotchi
+
 <p float="left">
-  <img src="/src/images/mobile.png" width="150" />
-  <img src="/src/images/ipad.png" width="150" /> 
-  <img src="/src/images/laptop.png" width="150" />
+<span>Mobile<img src="/src/images/mobile.png" width="150" /></span>
+<span>Ipad<img src="/src/images/ipad.png" width="200" /></span> 
+<span>Laptop<img src="/src/images/laptop.png" width="150" /></span>
 </p>
 ##
 
