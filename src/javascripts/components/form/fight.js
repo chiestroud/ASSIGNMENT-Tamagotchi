@@ -25,6 +25,9 @@ const strengthButton = (e) => {
     strength = getStrength();
     strength -= 10;
     updateStrength(strength);
+    if (strength === 0) {
+      document.querySelector('#strength').innerHTML = '<h1>You are Dead!</h1>';
+    }
   }
 };
 

@@ -15,7 +15,7 @@ body {
 #app {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100px 300px 300px;
+  grid-template-rows: 150px 330px 330px;
   grid-gap: 10px;
 }
 
@@ -30,10 +30,44 @@ body {
 }
 
 .title {
-  background-color: #000000;
+  background-color: #FF6700;
   color: white;
 }
 
 .fa-trophy {
   color: #FFD700;
+}
+
+.userPic {
+  height: 100px;
+  padding: 2px, 4px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.barContainer {
+  height: 25px;
+  background-color: #CCC;
+  position: relative;
+  border-radius: 1.5em;
+}
+
+
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  background-color: #FF0000;
+  border-radius: 1.5em;
+  color: white;
+  animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.form-group {
+  color: white;
 }
