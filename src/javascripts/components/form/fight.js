@@ -16,6 +16,9 @@ const strengthButton = (e) => {
     if (strength + 1 < 100) {
       strength += 1;
       updateStrength(strength);
+    } else if (Number.isNaN(strength)) {
+      document.querySelector('#strength').innerHTML = '<h1 class="text-danger">YOU CANNOT RUN AWAY ANYMORE</h1>';
+      document.querySelector('.fight').style.backgroundColor = 'black';
     } else {
       const remain = 100 - strength;
       updateStrength(strength + remain);
@@ -23,14 +26,18 @@ const strengthButton = (e) => {
   }
   if (buttonId === 'violenceButton') {
     strength = getStrength();
-    strength -= 10;
+    if (strength >= 0) {
+      strength -= 10;
+    }
     updateStrength(strength);
+    if (strength <= 0) {
+      document.querySelector('#strength').innerHTML = '<h1 class="text-danger">You are Dead!</h1>';
+      document.querySelector('.fight').style.backgroundColor = 'black';
+    } else if (Number.isNaN(strength)) {
+      document.querySelector('#strength').innerHTML = '<h1 class="text-danger">You Are DEAD Dead!</h1>';
+      document.querySelector('.fight').style.backgroundColor = 'black';
+    }
   }
 };
 
-const strengthHandleEvent = () => {
-  document.querySelector('#runButton').addEventListener('click', strengthButton);
-  document.querySelector('#violenceButton').addEventListener('click', strengthButton);
-};
-
-export default strengthHandleEvent;
+export default strengthButton;
