@@ -19,9 +19,6 @@ In case you lived under a rock in the 90s a Tamagotchi was the first "digital vi
 HTML
 CSS
 JavaScript
-
-Follow the instructions from the [Webpack template](https://github.com/nss-nightclass-projects/webpack-template/blob/master/README.md) to ensure you make all the updates to get the project started.
-
 ## Features
 ### Pet Picture
 Enter in a url for a picture and it shows up on top of the screen.
@@ -29,7 +26,8 @@ Enter in a url for a picture and it shows up on top of the screen.
 ### Score
 Eat, Play, Fight, and Sleep are MAX 100. 2 buttons on each cards add or subtract scores from each card. 
 DEATH - If you fight fight fight, you will encounter undesired effect.
-<img src="/src/images/death.png" width="300" />
+
+<p><img src="/src/images/death.png" width="300" /></p>
 
 ### Featured Video
 
